@@ -30,10 +30,11 @@ Use this program only in your own web pages, or in allowed pages.<br>
 This program can be used on linux or windows.<br>
 But still in beta version<br>
 Windows version are in testing!<br>
-Can also be used in android termux terminal emulator. With or Withuot root.
+Can also be used in android termux terminal emulator. With or Withuot root.<br><br>
 
+<span>HOW TO COMPILE</span><br>
+<span>- - - - - - - - - - - - - - -<br></span>
 
-<span>- - - - -<br></span>
-<span>USING</span><br>
-<span>- - - - -<br></span>
+To compile, configure and install dbuster, just type:
 
+    
