@@ -78,3 +78,18 @@ chmod +x configure_termux.sh
 ```
 ./configure_termux.sh<br>
 ```
+
+    
+<span>- - - - - <br></span>
+<span>USING</span><br>
+<span>- - - - - <br></span>
+    
+To use this simple tool, just type:
+
+```powershell
+dbuster -u <URL>
+```
+    
+```powerhsell
+dbuster --url <URL>
+```
