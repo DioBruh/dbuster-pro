@@ -32,8 +32,8 @@ But still in beta version<br>
 Windows version are in testing!<br>
 Can also be used in android termux terminal emulator. With or Withuot root.<br><br>
 
-<span>HOW TO COMPILE</span><br>
-<span>- - - - - - - - - - - - - - -<br></span>
+<span>HOW TO COMPILE (LINUX) </span><br>
+<span>- - - - - - - - - - - - - - - - - - - - -<br></span>
 
 To compile, configure and install dbuster, just type:<br>
 ´´´<br>
@@ -45,3 +45,11 @@ If you don't roteed, just type:<br>
 ´´´<br>
 ./configure_no_root.sh<br>
 ´´´<br>
+
+
+<span>WINDOWS</span><br>
+<span>- - - - - - - - -<br></span>
+
+To compile, configure and install dbuster in windows, just type:<br>
+> IN TESTING! VERSION 1.0V WILL BE INCLUDE WINDOWS
+    
