@@ -1,0 +1,64 @@
+#!/bin/ruby
+
+##############################################################
+# THIS IS A LEGAL PROGRAM, DON'T USE THIS FOR ILLEGAL ATTACKS! 
+# ONLY ASSHOLES ATTACK PRIVATE ORGS! 
+# RESPECT!
+# COPYRIGHT DIO-BRANDO, JOSH WASH 2021-2022
+##############################################################
+
+require_relative "lib/reqs"
+require_relative "src/init"
+
+arg_one = ARGV[0]
+parse_one = ARGV[1]
+arg_two = ARGV[2]
+parse_two = ARGV[3]
+if(arg_one == "--help" || arg_one == "-h")
+    puts "Usage: dbuster [-h || --help] To show this message and exit
+       dbuster [-u || --url] Url to attack"
+exit(0)
+end
+if not arg_one
+    puts "Invalid args!"
+    puts "Usage: dbuster [-h || --help] To show this message and exit
+       dbuster [-u || --url] Url to attack
+       dbuster [-w || --wordlist] Custom wordlist to use"
+    exit(0)
+end
+if(arg_one == "--version" || arg_one =="-v")
+   puts "Copyright 2021-2022 DioBrando and Josh Wash.
+This program are in 0.5v"
+exit(0) 
+end
+if(arg_one == "--url" || arg_one == "-u")
+    red = "\033[1;31m"
+    green = "\033[1;32m"
+    yellow = "\033[1;33m"
+    cyan = "\033[1;36m"
+    reset = "\033[0;0m"
+    init_message()
+    begin
+        require_relative "lib/reqs"
+    rescue LoadError
+        error_initial()
+    end
+    url = parse_one
+    current_message(url)
+    line = File.readlines('wordlists/common.txt')
+    for i in line
+        begin
+            if(req(url, i.strip()) == 200)
+                puts(url+"#{green}"+i.strip()+"#{reset}")
+                out_file = File.new("results.txt", "w")
+                out_file.puts(url+i)
+                out_file.close
+            end
+        rescue SignalException => e
+            puts "\n#{reset}[#{red}!#{reset}] Control+C detected!\nYour results are in results.txt"    
+            exit(0)
+        rescue => e 
+            req(url,i.strip())
+        end
+    end
+end
