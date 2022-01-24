@@ -58,8 +58,8 @@ if [ $1 == '-c' ]; then
         exit 1
     fi
     {
-        cp -r lib/ src/  wordlists/ configures/ /usr/local/bin
-        cp dbuster /usr/local/bin  
+        cp -r lib/ src/  wordlists/ configures/ data/data/com.termux/files/usr/local/bin
+        cp dbuster data/data/com.termux/files/usr/local/bin  
     } || { # catch
         echo Error! bin/local not found, did you mean using windows? use configure_windows.sh!
         exit 1
@@ -108,8 +108,8 @@ else
         exit 1
     fi
     {
-        cp -r lib/ src/  wordlists/ configures/ /usr/local/bin
-        cp dbuster /usr/local/bin   
+        cp -r lib/ src/  wordlists/ configures/ data/data/com.termux/files/usr/local/bin
+        cp dbuster data/data/com.termux/files/usr/local/bin   
     } || { # catch
         echo bin/local not found, are you using windows? use configure_windows.sh!
         exit 1
