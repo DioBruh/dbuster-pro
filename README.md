@@ -40,20 +40,41 @@ Can also be used in android termux terminal emulator. With or Withuot root.<br><
 <span>- - - - - - - - - - - - - - - - - - - - -<br></span>
 
 To compile, configure and install dbuster, just type:<br>
-´´´<br>
+    
+```powershell
+chmod +x configure.sh
+```
+    
+```
 ./configure.sh<br> 
-´´´<br>
+```
 
 If you don't roteed, just type:<br>
 
-´´´<br>
+```powershell    
+chmod +x configure_no_root.sh
+```
+    
+```
 ./configure_no_root.sh<br>
-´´´<br>
+```
 
 
 <span>WINDOWS</span><br>
 <span>- - - - - - - - -<br></span>
 
 To compile, configure and install dbuster in windows, just type:<br>
-> IN TESTING! VERSION 1.0V WILL BE INCLUDE WINDOWS
+> IN TESTING! VERSION 1.0V WILL BE INCLUDE WINDOWS<br><br>
     
+<span>TERMUX</span><br>
+<span>- - - - - - - -<br></span>
+To compile, configure and install dbuster in termux, just type:<br>
+
+
+```powershell
+chmod +x configure_termux.sh
+```
+
+```
+./configure_termux.sh<br>
+```
