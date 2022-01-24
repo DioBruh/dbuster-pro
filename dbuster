@@ -44,18 +44,52 @@ if(arg_one == "--url" || arg_one == "-u")
         error_initial()
     end
     url = parse_one
-    current_message(url)
+    
     line = File.readlines('wordlists/common.txt')
     for i in line
+        if not url.end_with? '/' and not url.include? 'https:'
+            new_url='https://'+url+'/'
+            begin
+                current_message(new_url);
+                if(req(new_url,i.strip()) == 200)
+                    puts(new_url+"#{green}"+i.strip()+"#{reset}")
+                else
+                end
+            rescue Errno::ECONNREFUSED => e
+                req(new_url,i.strip())
+            end
+        end
+        if url.include? 'https:' and not url.end_with? '/'
+            new_url=url+'/'
+            begin
+                current_message(new_url);
+                if(req(new_url,i.strip()) == 200)
+                    puts(new_url+"#{green}"+i.strip()+"#{reset}")
+                else
+                end
+            rescue Errno::ECONNREFUSED => e
+                req(new_url,i.strip())
+            end
+        end
+        if not url.include? "/" and not url.include? "https:"
+            new_url='https://'+url
+            begin
+                current_message(new_url);
+                if(req(new_url,i.strip()) == 200)
+                    puts(new_url+"#{green}"+i.strip()+"#{reset}")
+                else
+                end
+            rescue Errno::ECONNREFUSED => e
+                req(new_url,i.strip())
+            end
+        end
         begin
+            req(url, i.strip())
             if(req(url, i.strip()) == 200)
                 puts(url+"#{green}"+i.strip()+"#{reset}")
-                out_file = File.new("results.txt", "w")
-                out_file.puts(url+i)
-                out_file.close
             end
         rescue SignalException => e
-            puts "\n#{reset}[#{red}!#{reset}] Control+C detected!\nYour results are in results.txt"    
+            puts "\n#{reset}[#{red}!#{reset}] Control+C detected!\nQuitting"    
             exit(0)
         rescue => e 
             req(url,i.strip())
