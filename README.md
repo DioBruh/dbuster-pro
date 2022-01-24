@@ -3,7 +3,7 @@
   <img src="https://badgen.net/badge/rdbuster/dbuster-pro/grey?icon=github" width=200><br>
   
   
-  <span align=>DBUSTER-PRO is a program that explores directory listing in web pages.<span>
+  <span>DBUSTER-PRO is a program that explores directory listing in web pages.<span>
   <span>This program are in beta-version<br>become a<a href=""> contributor-developer</a> today to help with development!</span><br>
     <span>Any sale or commercialization of this program is prohibited, and will be in violation of DBUSTER's terms of contract.<br></span>
 </p>
