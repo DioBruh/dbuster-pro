@@ -35,6 +35,13 @@ Can also be used in android termux terminal emulator. With or Withuot root.<br><
 <span>HOW TO COMPILE</span><br>
 <span>- - - - - - - - - - - - - - -<br></span>
 
-To compile, configure and install dbuster, just type:
+To compile, configure and install dbuster, just type:<br>
+´´´<br>
+./configure.sh<br> 
+´´´<br>
 
-    
+If you don't roteed, just type:<br>
+
+´´´<br>
+./configure_no_root.sh<br>
+´´´<br>
