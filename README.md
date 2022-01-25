@@ -12,7 +12,7 @@
 - - - - - - - - - - - - -<br>
 DRBUSTER is a open-source project created by DioBrando and Josh Washington.<br>
 And this program exploits the common vulnerability Directory Listing on Webpages!<br>
-If you found any bug in program, report this in <a href="">issues</a>.<br>
+If you found any bug in program, report this in <a href="https://github.com/DioBruh/dbuster-pro/issues">issues</a>.<br>
 Any sale or commercialization of this program is prohibited, and will be in violation of DBUSTER's terms of contract.<br><br>
     
 <span>- - - - - - - - - - - - -<br></span>
