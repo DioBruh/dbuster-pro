@@ -5,7 +5,7 @@
 </p>
 <p align="center">
   <span align=>DBUSTER-PRO is a program that explores directory listing in web pages.<span>
-  <span>This program are in beta-version<br>become a<a href=""> contributor-developer</a> today to help with development!</span><br>
+  <span>This program are in beta-version<br>If you wanna collaborate, send me a message in <a href="mailto:diobruh10@gmail.com">email</a> today to help with development!</span><br>
 </p>
 - - - - - - - - - - - - -<br>
 <span>INTRODUCTION</span><br>
