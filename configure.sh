@@ -46,7 +46,7 @@ if [ $1 == '-r' ] || [ $1 == '--root' ]; then
         while true; do
             read -p "Do you wish to clone repo again (Y/n)" yn
             case $yn in
-                [Yy]* ) cd .. && rm -rf penis && git clone "url mt fodakkk"; break;;
+                [Yy]* ) cd .. && rm -rf dbuster-pro && git clone "https://github.com/DioBruh/dbuster-pro/"; break;;
                 [Nn]* ) exit;;
                 * ) exit 1;;
             esac
@@ -95,7 +95,7 @@ if [ $1 == '-n' ] || [ $1 == '--no-root' ]; then
         while true; do
             read -p "Do you wish to clone repo again (Y/n)" yn
             case $yn in
-                [Yy]* ) cd .. && rm -rf penis && git clone "url mt fodakkk"; break;;
+                [Yy]* ) cd .. && rm -rf dbuster-pro && git clone "https://github.com/DioBruh/dbuster-pro/"; break;;
                 [Nn]* ) exit;;
                 * ) exit 1;;
             esac
