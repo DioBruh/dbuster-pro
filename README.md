@@ -45,7 +45,7 @@ chmod +x configure.sh
 ```
     
 ```
-./configure.sh<br> 
+./configure.sh
 ```
 
 If you don't roteed, just type:<br>
