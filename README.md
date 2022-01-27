@@ -40,25 +40,50 @@ Can also be used in android termux terminal emulator. With or Withuot root.<br><
 
 To compile, configure and install dbuster, just type:<br>
     
+If you're in sudo mode or rooted, just type:<br>
+    
 ```powershell
 chmod +x configure.sh
 ```
     
 ```
-./configure.sh
+./configure.sh -r
 ```
 
-If you don't roteed, just type:<br>
+or    
 
-```powershell    
-chmod +x configure_no_root.sh
+```
+./configure.sh --root
 ```
     
-```
-./configure_no_root.sh 
+If you aren't sudo mode or rooted, or you're a termux user, just type:<br>    
+
+```powershell
+chmod +x configure.sh
 ```
 
+```
+./configure.sh -n
+```
 
+or 
+    
+    
+```
+./configure.sh --no-root
+```
+    
+if you're a termux user, just type:<br>
+
+```
+./configure.sh -t
+```
+    
+
+```
+./configure.sh --termux
+```
+    
 <span>WINDOWS</span><br>
 <span>- - - - - - - - -<br></span>
 
