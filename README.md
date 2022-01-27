@@ -55,7 +55,7 @@ chmod +x configure_no_root.sh
 ```
     
 ```
-./configure_no_root.sh<br>
+./configure_no_root.sh 
 ```
 
 
