@@ -12,8 +12,7 @@
 - - - - - - - - - - - - -<br>
 DRBUSTER is a open-source project created by DioBrando and Josh Washington.<br>
 And this program exploits the common vulnerability Directory Listing on Webpages!<br>
-If you found any bug in program, report this in <a href="https://github.com/DioBruh/dbuster-pro/issues">issues</a>.<br>
-Any sale or commercialization of this program is prohibited, and will be in violation of DBUSTER's terms of contract.<br><br>
+If you found any bug in program, report this in <a href="https://github.com/DioBruh/dbuster-pro/issues">issues</a>.<br><br>
     
 <span>- - - - - - - - - - - - -<br></span>
 <span>TERMS OF USE</span><br>
@@ -56,23 +55,6 @@ or
 ./configure.sh --root
 ```
     
-If you aren't sudo mode or rooted, or you're a termux user, just type:<br>    
-
-```powershell
-chmod +x configure.sh
-```
-
-```
-./configure.sh -n
-```
-
-or 
-    
-    
-```
-./configure.sh --no-root
-```
-    
 if you're a termux user, just type:<br>
 
 ```
@@ -89,24 +71,6 @@ if you're a termux user, just type:<br>
 
 To compile, configure and install dbuster in windows, just type:<br>
 > IN TESTING! VERSION 1.0V WILL BE INCLUDE WINDOWS<br><br>
-    
-<span>TERMUX</span><br>
-<span>- - - - - - - -<br></span>
-To compile, configure and install dbuster in termux, just type:<br>
-
-
-```powershell
-chmod +x configure_termux.sh
-```
-
-```
-./configure_termux.sh<br>
-```
-
-    
-<span>- - - - - <br></span>
-<span>USING</span><br>
-<span>- - - - - <br></span>
     
 To use this simple tool, just type:
 
