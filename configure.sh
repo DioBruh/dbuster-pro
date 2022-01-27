@@ -73,54 +73,6 @@ if [ $1 == '-r' ] || [ $1 == '--root' ]; then
     exit 1
 fi
 
-if [ $1 == '-n' ] || [ $1 == '--no-root' ]; then
-    clear 
-    echo -en $Reset"["; echo -en $green"#"; echo -e $Reset"]" "Starting config script!"
-    sleep 2
-    { # try
-        gcc configures/*.c -o main
-    } || { # catch
-        echo gcc does not exist
-        echo installing!
-        apt install gcc
-        #clear
-        exit 1 
-    }
-    gcc configures/*.c -o main
-    if ./main --file wordlists/common.txt | grep -q 'fil'; then
-        echo continuing...
-        clear
-    else
-        echo -e $red "error, missing files!" echo -e $Reset
-        while true; do
-            read -p "Do you wish to clone repo again (Y/n)" yn
-            case $yn in
-                [Yy]* ) cd .. && rm -rf dbuster-pro && git clone "https://github.com/DioBruh/dbuster-pro/"; break;;
-                [Nn]* ) exit;;
-                * ) exit 1;;
-            esac
-        done
-        exit 1
-    fi
-    {
-        cp -r lib/ src/  wordlists/ configures/ /usr/bin/
-        cp dbuster /usr/bin/   
-    } || { # catch
-        echo bin/local not found, are you using windows? use configure_windows.sh!
-        exit 1
-    }
-    { # try
-        chmod +x dbuster
-        chmod +x src/init
-        chmod +x lib/reqs
-    } || { # catch
-        echo error, missing files!
-        echo creating!
-        
-        exit 1 
-    }
-fi
-
 if [ $1 == '-t' ] || [ $1 == '--termux' ]; then
     clear 
     echo -en $Reset"["; echo -en $green"#"; echo -e $Reset"]" "Starting config script!"
