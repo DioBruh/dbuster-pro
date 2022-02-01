@@ -4,7 +4,6 @@
 # RESPECT!
 # COPYRIGHT DIO-BRANDO, JOSH WASH 2021-2022
 ##############################################################
-
 cyan='\e[0;36m'
 green='\e[0;32m'
 red='\e[1;31m'
@@ -28,31 +27,6 @@ if [ $1 == '-r' ] || [ $1 == '--root' ]; then
     [[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { 
         echo -en $Reset"["; echo -en $red"!"; echo -en $Reset"]"; echo -en " You must be root to run the script"; echo -e $Reset ; exit 1;
     } 
-    { # try
-        gcc configures/*.c -o main
-    } || { # catch
-        echo gcc does not exist
-        echo installing!
-        apt install gcc
-        #clear
-        exit 1 
-    }
-    gcc configures/*.c -o main
-    if ./main --file wordlists/common.txt | grep -q 'fil'; then
-        echo continuing...
-        clear
-    else
-        echo -e $red "error, missing files!" echo -e $Reset
-        while true; do
-            read -p "Do you wish to clone repo again (Y/n)" yn
-            case $yn in
-                [Yy]* ) cd .. && rm -rf dbuster-pro && git clone "https://github.com/DioBruh/dbuster-pro/"; break;;
-                [Nn]* ) exit;;
-                * ) exit 1;;
-            esac
-        done
-        exit 1
-    fi
     {
         cp -r lib/ src/  wordlists/ configures/ /usr/bin/
         cp dbuster /usr/bin/   
@@ -77,31 +51,6 @@ if [ $1 == '-t' ] || [ $1 == '--termux' ]; then
     clear 
     echo -en $Reset"["; echo -en $green"#"; echo -e $Reset"]" "Starting config script!"
     sleep 2
-    { # try
-        gcc configures/*.c -o main
-    } || { # catch
-        echo gcc does not exist
-        echo installing!
-        apt install gcc
-        #clear
-        exit 1 
-    }
-    gcc configures/*.c -o main
-    if ./main --file wordlists/common.txt | grep -q 'fil'; then
-        echo continuing...
-        clear
-    else
-        echo -e $red "error, missing files!" echo -e $Reset
-        while true; do
-            read -p "Do you wish to clone repo again (Y/n)" yn
-            case $yn in
-                [Yy]* ) cd .. && rm -rf penis && git clone "url mt fodakkk"; break;;
-                [Nn]* ) exit;;
-                * ) exit 1;;
-            esac
-        done
-        exit 1
-    fi
     {
         cp -r lib/ src/  wordlists/ configures/ $HOME/../usr/bin
         cp dbuster $HOME/../usr/bin
