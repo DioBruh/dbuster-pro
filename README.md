@@ -1,6 +1,6 @@
 <p align="center">
   <span>DBUSTER-PRO<br>(c) 2021-2022 DioBrando and Josh Washingtom.<br></span><br>
-  <img src="https://badgen.net/badge/rdbuster/dbuster-pro/grey?icon=github" width=200><br>
+  <img src="https://badgen.net/badge/dbuster/dbuster-pro/grey?icon=github" width=200><br>
   
 </p>
 <p align="center">
