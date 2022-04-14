@@ -68,7 +68,7 @@ if(arg_one)
             begin
                 current_message(new_url);
                 if(req(new_url,i.strip()) == 200)
-                    puts(new_url+"#{green}"+i.strip()+"#{reset}")
+                    puts(new_url+"#{green}"+i.strip()+ "#{reset}")
                 else
                 end
             rescue Errno::ECONNREFUSED => e
