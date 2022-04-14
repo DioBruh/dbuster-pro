@@ -1,12 +1,4 @@
 #!/bin/ruby
-
-##############################################################
-# THIS IS A LEGAL PROGRAM, DON'T USE THIS FOR ILLEGAL ATTACKS! 
-# ONLY ASSHOLES ATTACK PRIVATE ORGS! 
-# RESPECT!
-# COPYRIGHT DIO-BRANDO, JOSH WASH 2021-2022
-##############################################################
-
 require_relative "lib/reqs"
 require_relative "src/init"
 
@@ -31,7 +23,7 @@ if(arg_one == "--version" || arg_one =="-v")
 This program are in 0.5v"
 exit(0) 
 end
-if(arg_one == "--url" || arg_one == "-u")
+if(arg_one)
     red = "\033[1;31m"
     green = "\033[1;32m"
     yellow = "\033[1;33m"
@@ -43,7 +35,7 @@ if(arg_one == "--url" || arg_one == "-u")
     rescue LoadError
         error_initial()
     end
-    url = parse_one
+    url = arg_one
     
     line = File.readlines('wordlists/common.txt')
     for i in line
