@@ -14,7 +14,7 @@ end
 if not arg_one
     puts "Invalid args!"
     puts "Usage: dbuster [-h || --help] To show this message and exit
-       dbuster [-u || --url] Url to attack
+       dbuster [URL] Url to attack
        dbuster [-w || --wordlist] Custom wordlist to use"
     exit(0)
 end
