@@ -75,9 +75,5 @@ To compile, configure and install dbuster in windows, just type:<br>
 To use this simple tool, just type:
 
 ```powershell
-dbuster -u <URL>
-```
-    
-```powerhsell
-dbuster --url <URL>
+dbuster <URL>
 ```
